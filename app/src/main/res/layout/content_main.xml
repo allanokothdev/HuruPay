@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_main">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.tabs.TabLayout
+            android:layout_marginTop="@dimen/dimen_2"
+            android:id="@+id/tabs"
+            app:tabIndicatorHeight="3dp"
+            app:tabIndicator="@drawable/tab_background"
+            app:tabIndicatorAnimationMode="elastic"
+            app:tabTextAppearance="@style/TabTextViewStyle"
+            app:tabTextColor="@color/colorGray"
+            app:tabIndicatorColor="@color/colorBlack"
+            app:tabSelectedTextColor="@color/colorBlack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabMode="scrollable" />
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/viewPager"
+            android:orientation="horizontal" />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

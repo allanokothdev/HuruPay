@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/container"
+    android:layout_height="match_parent"
+    tools:context=".Send">
+
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/activity_margin"
+        tools:ignore="UseCompoundDrawables">
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:fontFamily="@font/open_sans_bold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:lineSpacingExtra="8sp"
+            android:text="@string/send_money"
+            android:textColor="#4d4d4d"
+            android:textSize="22sp" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_gravity="center_vertical|end"
+            app:cardBackgroundColor="@color/colorPrimary"
+            app:cardCornerRadius="@dimen/dimen_8"
+            android:layout_width="@dimen/dimen_45"
+            android:layout_height="@dimen/dimen_45">
+
+            <ImageView
+                android:contentDescription="@string/app_name"
+                android:id="@+id/closeImageView"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/ic_close_blue_24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:tint="@color/colorWhite" />
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:background="@color/white"
+        android:layout_below="@id/title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:padding="16dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_60">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/senderCardView"
+                    android:layout_gravity="end|center_vertical"
+                    app:cardCornerRadius="@dimen/padding_8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:scaleType="centerCrop"
+                        android:contentDescription="@string/app_name"
+                        android:id="@+id/senderImageView"
+                        android:src="@drawable/lincoln"
+                        android:layout_width="@dimen/dimen_60"
+                        android:layout_height="match_parent"/>
+
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:padding="@dimen/padding_10"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@id/senderCardView"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="@string/sender"
+                        android:layout_marginBottom="3dp"
+                        android:ellipsize="end"
+                        android:scrollHorizontally="true"
+                        android:maxLines="1"
+                        android:textColor="@color/black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:textIsSelectable="true"
+                        android:text="@string/_0xd0fcf6912e09015324dd0899c1efaaba6a9f43ea"
+                        android:ellipsize="end"
+                        android:scrollHorizontally="true"
+                        android:maxLines="1"
+                        android:textColor="@color/feminineEight"
+                        android:fontFamily="@font/open_sans_regular"
+                        android:id="@+id/senderTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_marginStart="@dimen/dimen_30"
+                android:background="@color/colorGray"
+                android:layout_width="1dp"
+                android:layout_height="@dimen/dimen_40"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_60">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView"
+                    android:layout_gravity="end|center_vertical"
+                    app:cardCornerRadius="@dimen/padding_8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:scaleType="centerCrop"
+                        android:contentDescription="@string/app_name"
+                        android:id="@+id/receiverImageView"
+                        android:src="@drawable/lincoln"
+                        android:layout_width="@dimen/dimen_60"
+                        android:layout_height="match_parent"/>
+
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:padding="@dimen/padding_10"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@id/cardView"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="@string/receiver"
+                        android:layout_marginBottom="3dp"
+                        android:ellipsize="end"
+                        android:scrollHorizontally="true"
+                        android:maxLines="1"
+                        android:textColor="@color/black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:textIsSelectable="true"
+                        android:text="@string/receiver_address"
+                        android:ellipsize="end"
+                        android:scrollHorizontally="true"
+                        android:maxLines="1"
+                        android:textColor="@color/feminineEight"
+                        android:fontFamily="@font/open_sans_regular"
+                        android:id="@+id/receiverTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="@dimen/dimen_30"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_60">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_centerVertical="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/celodollar"
+                    android:id="@+id/coinCardView"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_toEndOf="@id/coinCardView"
+                    android:layout_toStartOf="@id/symbolTextView"
+                    android:layout_marginStart="@dimen/dimen_10"
+                    android:background="@drawable/rounded_chat_container"
+                    android:hint="@string/enter_amount"
+                    app:startIconDrawable="@drawable/outline_attach_money_24"
+                    app:boxStrokeWidth="0dp"
+                    app:boxStrokeWidthFocused="0dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:textSize="20sp"
+                        android:gravity="start"
+                        android:cursorVisible="true"
+                        android:textCursorDrawable="@drawable/cursor_drawable"
+                        android:imeOptions="actionSend"
+                        android:inputType="numberDecimal"
+                        android:background="@color/transparent"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:id="@+id/amountTextInputEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_alignParentEnd="true"
+                    android:text="@string/cusd"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:id="@+id/symbolTextView"
+                    android:layout_width="@dimen/dimen_80"
+                    android:layout_height="match_parent"/>
+
+            </RelativeLayout>
+
+           <RelativeLayout
+               android:layout_marginTop="@dimen/dimen_20"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <TextView
+                   android:layout_centerVertical="true"
+                   android:textColor="@color/black"
+                   android:layout_alignParentStart="true"
+                   android:text="@string/transaction_charges"
+                   android:textSize="18sp"
+                   android:textAlignment="center"
+                   android:fontFamily="@font/open_sans_semibold"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"/>
+
+               <TextView
+                   android:layout_centerVertical="true"
+                   android:textColor="@color/black"
+                   android:layout_alignParentEnd="true"
+                   android:text="@string/_0"
+                   android:textSize="20sp"
+                   android:textAlignment="center"
+                   android:fontFamily="@font/open_sans_semibold"
+                   android:id="@+id/chargesTextView"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"/>
+
+
+           </RelativeLayout>
+
+
+            <Button
+                android:textAllCaps="false"
+                android:layout_marginTop="@dimen/dimen_24"
+                android:textSize="16sp"
+                android:fontFamily="@font/open_sans_semibold"
+                android:background="@drawable/primary_background_button"
+                android:textColor="@color/colorWhite"
+                android:text="@string/send_money"
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_60"/>
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/progressBar"
+        android:layout_gravity="bottom|center_horizontal"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_30"
+        app:indicatorColor="@color/colorPrimary"
+        app:indicatorName="BallPulseIndicator" />
+</RelativeLayout>

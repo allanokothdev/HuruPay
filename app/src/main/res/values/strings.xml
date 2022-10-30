@@ -1,0 +1,236 @@
+<resources>
+    <string name="app_name">HuruPay</string>
+
+    <!-- Splash -->
+    <string name="slogan">Digitize your Business Records</string>
+    <string name="privacy_policy">By Creating an account with HuruPay, you agree to our <font color='#6698FF'> Privacy Policy</font> and <font color='#6698FF'> Terms of Service</font></string>
+    <string name="continue_with_google">Continue with Google</string>
+    <string name="content_description">Content Description</string>
+
+    <string name="login_already">You already have an account?  <font color='#6698FF'> Login Instead</font></string>
+
+    <!-- Create Profile -->
+    <string name="create_user_profile">Create User Profile</string>
+    <string name="enter_name">Enter your Name</string>
+    <string name="enter_email">Enter your Email</string>
+    <string name="next">Next</string>
+    <string name="publish">Publish</string>
+    <string name="finish">Finish</string>
+    <string name="update">Update</string>
+    <string name="upload_profile_pic">Upload Profile Pic</string>
+    <string name="change_profile_pic">Change Profile Pic</string>
+    <string name="profile_picture">Profile Picture</string>
+    <string name="sign_in_with_email">Sign In with Email</string>
+    <string name="enter_your_password">Enter your Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="login">Login</string>
+    <string name="account_recovery">Account Recovery</string>
+    <string name="recover_email">Recover Email</string>
+    <string name="login_instead">Login Instead</string>
+    <string name="signup">SignUp</string>
+    <string name="enter_your_email">Enter your Email</string>
+    <string name="repeat_your_password">Repeat your Password</string>
+    <string name="login_with_email">Login with Email</string>
+    <string name="sign_up_instead">Sign Up Instead</string>
+    <string name="select">Select</string>
+    <string name="done">DONE</string>
+    <string name="cancel">CANCEL</string>
+    <string name="selected">Selected</string>
+    <string name="subscribe">Subscribe</string>
+    <string name="subscribed">Subscribed</string>
+
+
+    <!-- Main Activity -->
+
+    <string name="allrightsreserved">&#169; HuruPay Inc 2022 All Rights Reserved.</string>
+    <string name="the_cotton_industry_development_bill_senate_bills_no_55_of_2021">The Cotton Industry Development Bill (Senate Bills No. 55 of 2021)</string>
+    <string name="monday_7_december_2022">Monday, 7 December 2022</string>
+    <string name="msg_subscribed">Subscribed to Notifications</string>
+    <string name="msg_token_fmt" translatable="false">FCM registration Token: %s</string>
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+    <string name="default_notification_channel_name" translatable="true">Weather</string>
+    <string name="msg_subscribe_failed">Failed to subscribe to Notifications</string>
+    <string name="fcm_message">FCM Message</string>
+
+
+    <string name="select_profile_picture">Select Profile Picture</string>
+    <string name="kes_3000">0 cUSD</string>
+
+    <string name="price">%s cUSD</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="btn_checkout">CHECKOUT (%s)</string>
+    <string name="lbl_item_price_quantity">%s x %d</string>
+    <string name="quantity">%d qty</string>
+    <string name="token_price">%s %s</string>
+
+    <string name="order_id">Order Id #%s</string>
+
+
+    <string name="appy_before">Apply before #%s</string>
+
+    <string name="sendcusd">Send %s</string>
+
+    <string name="refresh">Refresh</string>
+    <string name="price_with_currency">RwF %.2f</string>
+    <string name="price_with_cart">RwF %d x %d</string>
+    <string name="price_with_currency_string">%s cUSD</string>
+    <string name="average_fund">Average Loan %s</string>
+    <string name="total_price_with_currency_string">Total: RwF %s</string>
+
+    <string name="order_no_567yuio">Order NO 567YUIO</string>
+    <string name="kes_500">500 cUSD</string>
+    <string name="delivered">Delivered</string>
+    <string name="orderno">Order : %s</string>
+
+
+    <string name="hey">Hey %s</string>
+
+
+    <string name="add_location">Add Location</string>
+    <string name="enter_your_village">Enter your Village</string>
+    <string name="enter_street_address">Enter Street Address</string>
+    <string name="enter_your_cell">Enter your Cell</string>
+    <string name="enter_your_sector">Enter your Sector</string>
+    <string name="enter_your_district">Enter your District</string>
+    <string name="enter_your_province">Enter your Province</string>
+    <string name="add_brand_location">Add Business Location</string>
+    <string name="create_brand">Create Business</string>
+    <string name="upload_brand_pic">Upload Brand Pic</string>
+    <string name="enter_brand_title">Enter Brand Title</string>
+    <string name="select_brand_industry">Select Business Industry</string>
+    <string name="enter_brand_summary">Enter Business Summary</string>
+    <string name="action_scan_qr">Scan QR</string>
+    <string name="create_product">Create Product</string>
+    <string name="create_post">Create Post</string>
+    <string name="create_review">Create Review</string>
+    <string name="share_your_post">share your post</string>
+    <string name="delete_product">Delete Product</string>
+    <string name="select_product_category">Select Product Category</string>
+    <string name="edit">Edit</string>
+    <string name="options">Options</string>
+    <string name="delete">Delete</string>
+    <string name="report">Report</string>
+    <string name="enter_business_name">Enter Business Name</string>
+    <string name="enter_business_address">Enter Business Address</string>
+    <string name="kimironko_kigali">Kimironko, Kigali</string>
+    <string name="monthly_total">Monthly Total</string>
+    <string name="add_new_sales_record">Add New Sales Record</string>
+    <string name="take_product_picture">Take Product Picture</string>
+    <string name="enter_product_service_title">Enter Product/Service Title</string>
+    <string name="enter_sale_summary">Enter Sale Summary</string>
+    <string name="enter_sale_price">Enter Sale Price</string>
+    <string name="select_business_manager">Select Business Manager</string>
+    <string name="select_payment_type">Select Payment Type</string>
+    <string name="order_2345">Order 2345</string>
+    <string name="rwf_100000">RwF 100000</string>
+    <string name="delete_business">Delete Business</string>
+    <string name="contacts">Contacts</string>
+    <string name="create_business">Create Business</string>
+    <string name="renew_your_subscription">Renew your Subscription</string>
+    <string name="sell">Sell</string>
+    <string name="enter_sales_quantity">Enter Sales Quantity</string>
+    <string name="enter_profit">Enter Profit</string>
+    <string name="service_picture">Service Picture</string>
+    <string name="add_new_stock">Add New Stock</string>
+    <string name="enter_stock_quantity">Enter Stock Quantity</string>
+    <string name="enter_unit_price">Enter Unit Price</string>
+    <string name="what_are_you_selling">What are you selling?</string>
+    <string name="enter_unit_selling_price">Enter Unit Selling Price</string>
+    <string name="enter_unit_buying_price">Enter Unit Buying Price</string>
+    <string name="make_a_sale">Make a Sale</string>
+    <string name="edit_stock">Edit Stock</string>
+    <string name="_2_qty">2 qty</string>
+    <string name="current_stock_value">Current Stock Value</string>
+    <string name="continued">Continue</string>
+    <string name="i_didn_t_get_a_code">I didn\'t get a code</string>
+    <string name="tap_next_to_verify_your_account_with_your_phone_number_you_don_t_need_to_manualy_enter_verification_code_if_the_number_install_in_this_phone">Tap Next to verify your account with your phone number. You don\'t need to manualy enter verification code if the number install in this phone...</string>
+    <string name="congratulation_your_number_is_verified_click_continue_to_create_your_profile">Congratulation your number is verified click Continue to create your profile</string>
+    <string name="enter_your_mobile_number">Enter your mobile number</string>
+    <string name="verifying_number">Verifying Number</string>
+    <string name="enter_business_registration_number">Enter Business Registration Number</string>
+    <string name="enter_the_code_that_was_send_to">Enter the code that was send to</string>
+    <string name="_25470000000">+25470000000</string>
+    <string name="apply_for_business_loan">Apply for Business Loan</string>
+    <string name="view_more">View More</string>
+    <string name="business_managers">Business Managers</string>
+    <string name="finance_opportunities">Finance Opportunities</string>
+    <string name="select_business_category">Select Business Category</string>
+    <string name="enter_your_username">Enter your Username</string>
+    <string name="wallet_address">Wallet Address</string>
+    <string name="private_key">Private Key</string>
+    <string name="deposit">Deposit</string>
+    <string name="send">Send</string>
+    <string name="withdraw">Withdraw</string>
+    <string name="swap">Swap</string>
+    <string name="wallet_balance">Wallet Balance</string>
+    <string name="send_money">Send Money</string>
+    <string name="received_money">Received Money</string>
+    <string name="_0xd0fcf6912e09015324dd0899c1efaaba6a9f43ea">0xD0FcF6912e09015324dD0899C1EFAaba6A9f43EA</string>
+    <string name="enter_amount">Enter amount</string>
+    <string name="enter_recipient_wallet_address">Enter Recipient Wallet Address</string>
+    <string name="enter_sender_wallet_address">Enter Sender Wallet Address</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="manage_your_personal_information">Manage your personal information</string>
+    <string name="privacy_policyy">Privacy Policy</string>
+    <string name="feedback">Feedback</string>
+    <string name="send_feedback_to_our_developers">Send feedback to our developers</string>
+    <string name="about_hurupay">About HuruPay</string>
+    <string name="view_information_about_hurupay">View information about HuruPay</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="coming_soon_feature">Coming Soon Feature</string>
+    <string name="scan_qr">Scan QR to Send Money</string>
+    <string name="wallet">Wallet</string>
+    <string name="scan_to_send_with_hurupay">Scan to Send Money with HuruPay</string>
+
+    <string name="action_qr">QR Code</string>
+    <string name="action_print">Print</string>
+    <string name="action_share">Share</string>
+    <string name="action_save">Save in Gallery</string>
+    <string name="action_update">Update Details</string>
+    <string name="receive">Receive</string>
+    <string name="sender">Sender</string>
+    <string name="receiver">Receiver</string>
+    <string name="receiver_address">Receiver Address</string>
+    <string name="fast_secure_cheap">Fast • Transparent • Cheap</string>
+    <string name="confirm">Confirm</string>
+    <string name="the_money_was_sent_successfully">The money was sent successfully</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="select_profile_type">Select Profile Type</string>
+    <string name="select_gender">Select Gender</string>
+    <string name="create_account">Create Account</string>
+    <string name="_0_994_usd">0.994 USD</string>
+    <string name="add_to_contacts">Add to Contacts</string>
+    <string name="buy">Buy</string>
+    <string name="_130000_eth">130000 ETH</string>
+    <string name="eth">ETH</string>
+    <string name="_40000">$ 40000</string>
+    <string name="ethereum">Ethereum</string>
+    <string name="summary">Summary</string>
+    <string name="privateKey">A private key is like a password that allows you to access and manage your token funds</string>
+    <string name="celo">Celo (CELO) is the protocols native asset. It serves as a utility that enables users to participate in network consensus (through its Proof-of-Stake system) pay for on-chain transactions, and vote on governance decisions</string>
+    <string name="click_to_view">Click to View</string>
+    <string name="payment_received">Payment Received</string>
+    <string name="add_token">Add Token</string>
+    <string name="upload_token_logo">Upload Token Logo</string>
+    <string name="enter_token_title">Enter Token Title</string>
+    <string name="enter_token_symbol">Enter Token Symbol</string>
+    <string name="enter_token_summary">Enter Token Summary</string>
+    <string name="enter_token_contract_address">Enter Token Contract Address</string>
+    <string name="select_token_type">Select Token Type</string>
+    <string name="specify_token_category">Specify Token Category</string>
+    <string name="select_token">Select Token</string>
+    <string name="select_country">Select Country</string>
+    <string name="select_countries">Select Countries</string>
+    <string name="enter_the_no_of_decimals">Enter the No. of Decimals</string>
+    <string name="token_list">Token List</string>
+    <string name="list_of_tokens_available_on_hurupay">List of Tokens available on HuruPay</string>
+    <string name="exchange">Exchange</string>
+    <string name="add_wallet">Add Wallet</string>
+    <string name="cusd">cUSD</string>
+    <string name="transaction_charges">Transaction Charges</string>
+    <string name="_0">0</string>
+    <string name="_800_usd">800 USD</string>
+</resources>

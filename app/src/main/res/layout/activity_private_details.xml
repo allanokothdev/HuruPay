@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorAccent"
+    android:id="@+id/container"
+    android:layout_height="match_parent"
+    tools:context=".PrivateDetails">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        app:title="Private Key"
+        app:titleTextColor="@color/toolbarTitle"
+        android:background="@color/toolbarBackground"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_marginTop="@dimen/dimen_2"
+        android:background="@color/colorWhite"
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:padding="@dimen/dimen_12"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="@color/black"
+                android:layout_marginTop="@dimen/dimen_5"
+                android:text="@string/privateKey"
+                android:textSize="16sp"
+                android:fontFamily="@font/open_sans_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textIsSelectable="true"
+                android:padding="@dimen/dimen_12"
+                android:textColor="@color/black"
+                android:layout_marginTop="@dimen/dimen_12"
+                android:id="@+id/textView"
+                android:text="@string/_0xd0fcf6912e09015324dd0899c1efaaba6a9f43ea"
+                android:textSize="18sp"
+                android:background="@drawable/rounded_chat_container"
+                android:fontFamily="@font/open_sans_semibold"
+                android:minHeight="@dimen/dimen_80"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+</RelativeLayout>

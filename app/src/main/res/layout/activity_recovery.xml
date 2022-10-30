@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorAccent"
+    android:layout_height="match_parent"
+    tools:context=".Recovery">
+
+    <androidx.appcompat.widget.Toolbar
+        app:title="Recovery"
+        app:titleTextColor="@color/toolbarTitle"
+        android:background="@color/toolbarBackground"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <ProgressBar
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:id="@+id/progressBar"
+        android:indeterminate="true"
+        android:visibility="invisible"
+        android:indeterminateBehavior="repeat"
+        android:indeterminateTint="@color/black"
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:background="@color/colorWhite"
+        android:layout_below="@id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:paddingStart="20dp"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:paddingEnd="20dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:drawablePadding="@dimen/dimen_5"
+                android:drawableTint="@color/colorPrimary"
+                android:drawableStart="@drawable/ic_mail_outline_blue_24dp"
+                android:layout_marginTop="24dp"
+                android:hint="@string/enter_email"
+                android:textSize="18sp"
+                android:cursorVisible="true"
+                android:textCursorDrawable="@drawable/cursor_drawable"
+                android:imeOptions="actionDone"
+                android:inputType="textEmailAddress"
+                android:fontFamily="@font/open_sans_semibold"
+                android:id="@+id/emailTextInputEditText"
+                android:layout_width="match_parent"
+                android:background="@drawable/rounded_chat_container"
+                android:paddingEnd="@dimen/dimen_10"
+                android:paddingStart="@dimen/dimen_10"
+                android:layout_height="@dimen/dimen_60"
+                tools:targetApi="m" />
+
+
+
+
+            <Button
+                android:textAllCaps="false"
+                android:layout_marginTop="@dimen/dimen_24"
+                android:fontFamily="@font/open_sans_semibold"
+                android:textSize="18sp"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/primary_background_button"
+                android:text="@string/finish"
+                android:textAlignment="center"
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_60"/>
+
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

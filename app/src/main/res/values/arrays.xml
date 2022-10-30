@@ -1,0 +1,92 @@
+<resources>
+    <!-- Arrays &amp;-->
+    <string-array name="categories">
+        <item>Transactions</item>
+        <item>Favorites</item>
+        <item>Contacts</item>
+        <item>Brands</item>
+    </string-array>
+
+    <!-- Arrays &amp;-->
+    <string-array name="gender">
+        <item>Female</item>
+        <item>Male</item>
+    </string-array>
+
+    <!-- Arrays &amp;-->
+    <string-array name="tokens">
+        <item>ERC-20</item>
+        <item>Male</item>
+    </string-array>
+
+    <!-- Arrays &amp;-->
+    <string-array name="tokencategory">
+        <item>StableCoin</item>
+        <item>Male</item>
+    </string-array>
+
+    <!-- Arrays &amp;-->
+    <string-array name="countries">
+        <item>Algeria</item>
+        <item>Angola</item>
+        <item>Benin</item>
+        <item>Botswana</item>
+        <item>Burkina Faso</item>
+        <item>Burundi</item>
+        <item>Cape Verde</item>
+        <item>Cameroon</item>
+        <item>Central Africa Republic</item>
+        <item>Chad</item>
+        <item>Comoros</item>
+        <item>Congo</item>
+        <item>Cote d'Ivoire</item>
+        <item>Djibouti</item>
+        <item>Egypt</item>
+        <item>Equatorial Guinea</item>
+        <item>Eritrea</item>
+        <item>Eswatini</item>
+        <item>Ethiopia</item>
+        <item>Gabon</item>
+        <item>Gambia</item>
+        <item>Ghana</item>
+        <item>Guinea</item>
+        <item>Guinea-Bissau</item>
+        <item>Kenya</item>
+        <item>Lesotho</item>
+        <item>Liberia</item>
+        <item>Libya</item>
+        <item>Madagascar</item>
+        <item>Malawi</item>
+        <item>Mali</item>
+        <item>Mauritania</item>
+        <item>Mauritius</item>
+        <item>Morocco</item>
+        <item>Mozambique</item>
+        <item>Namibia</item>
+        <item>Niger</item>
+        <item>Nigeria</item>
+        <item>Rwanda</item>
+        <item>Sao Tome and Principe</item>
+        <item>Senegal</item>
+        <item>Seychelles</item>
+        <item>Sierra Leone</item>
+        <item>Somalia</item>
+        <item>South Africa</item>
+        <item>South Sudan</item>
+        <item>Sudan</item>
+        <item>Tanzania</item>
+        <item>Togo</item>
+        <item>Tunisia</item>
+        <item>Uganda</item>
+        <item>Zambia</item>
+        <item>Zimbabwe</item>
+    </string-array>
+
+    <!-- Arrays &amp;-->
+    <string-array name="type">
+        <item>Brand</item>
+        <item>Person</item>
+    </string-array>
+
+
+</resources>

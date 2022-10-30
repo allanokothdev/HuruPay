@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/webViewLayout">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+        android:background="@color/colorWhite">
+    </androidx.appcompat.widget.Toolbar>
+
+    <ProgressBar
+        android:layout_centerInParent="true"
+        android:id="@+id/webViewProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <WebView
+        android:layout_below="@id/toolbar"
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>

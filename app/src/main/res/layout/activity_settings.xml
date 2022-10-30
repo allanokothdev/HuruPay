@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/container"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Settings">
+
+    <androidx.appcompat.widget.Toolbar
+        app:subtitleTextColor="@color/toolbarTitle"
+        app:titleTextColor="@color/toolbarTitle"
+        android:background="@color/toolbarBackground"
+        android:layout_alignParentTop="true"
+        app:title="Settings"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:scaleType="centerCrop"
+            android:layout_gravity="end|center_vertical"
+            android:contentDescription="@string/app_name"
+            android:layout_margin="10dp"
+            android:id="@+id/countryImageView"
+            android:layout_width="33dp"
+            android:layout_height="22dp"/>
+
+        <com.hbb20.CountryCodePicker
+            android:visibility="gone"
+            android:id="@+id/countryCodePicker"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:ccp_autoDetectCountry="true"
+            app:ccp_autoDetectLanguage="true"
+            app:ccp_hintExampleNumber="true"/>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/accountLayout"
+                android:layout_margin="@dimen/dimen_8"
+                android:padding="@dimen/dimen_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/cardView"
+                    app:cardCornerRadius="@dimen/dimen_8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/logo"
+                        android:contentDescription="@string/app_name"
+                        android:id="@+id/imageView"
+                        android:layout_width="@dimen/dimen_40"
+                        android:layout_height="@dimen/dimen_40"/>
+
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="@dimen/dimen_24"
+                    android:layout_toEndOf="@id/cardView"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:drawablePadding="@dimen/dimen_5"
+                        android:id="@+id/textView"
+                        style="@style/MenuTitleViewStyle"
+                        android:text="@string/app_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:textIsSelectable="true"
+                        android:id="@+id/subTextView"
+                        style="@style/MenuSubTitleViewStyle"
+                        android:text="@string/app_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/addressLayout"
+                android:layout_margin="@dimen/dimen_8"
+                android:padding="@dimen/dimen_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    app:srcCompat="@drawable/ic_outline_account_balance_wallet_24"
+                    android:layout_alignParentStart="true"
+                    android:contentDescription="@string/app_name"
+                    android:id="@+id/addressImageView"
+                    android:layout_centerVertical="true"
+                    android:layout_width="@dimen/dimen_30"
+                    android:layout_height="@dimen/dimen_30"
+                    app:tint="@color/colorPrimary" />
+
+                <LinearLayout
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="@dimen/dimen_24"
+                    android:layout_toEndOf="@id/addressImageView"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/MenuTitleViewStyle"
+                        android:text="@string/wallet_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:textIsSelectable="true"
+                        android:id="@+id/addressTextView"
+                        style="@style/MenuSubTitleViewStyle"
+                        android:text="@string/app_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/privateKeyLayout"
+                android:layout_margin="@dimen/dimen_8"
+                android:padding="@dimen/dimen_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    app:srcCompat="@drawable/ic_security_black_24dp"
+                    android:layout_alignParentStart="true"
+                    android:contentDescription="@string/app_name"
+                    android:id="@+id/dataStoriesImageView"
+                    android:layout_centerVertical="true"
+                    android:layout_width="@dimen/dimen_30"
+                    android:layout_height="@dimen/dimen_30"
+                    app:tint="@color/colorPrimary" />
+
+                <LinearLayout
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="@dimen/dimen_24"
+                    android:layout_toEndOf="@id/dataStoriesImageView"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/MenuTitleViewStyle"
+                        android:text="@string/private_key"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:textIsSelectable="true"
+                        android:id="@+id/privateKeyTextView"
+                        style="@style/MenuSubTitleViewStyle"
+                        android:text="@string/click_to_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/phoneNumberLayout"
+                android:layout_margin="@dimen/dimen_8"
+                android:padding="@dimen/dimen_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    app:srcCompat="@drawable/ic_call_black_24dp"
+                    android:layout_alignParentStart="true"
+                    android:contentDescription="@string/app_name"
+                    android:id="@+id/sponsoredImageView"
+                    android:layout_centerVertical="true"
+                    android:layout_width="@dimen/dimen_30"
+                    android:layout_height="@dimen/dimen_30"
+                    app:tint="@color/colorPrimary" />
+
+                <LinearLayout
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="@dimen/dimen_24"
+                    android:layout_toEndOf="@id/sponsoredImageView"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/MenuTitleViewStyle"
+                        android:text="@string/phone_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/phoneTextView"
+                        style="@style/MenuSubTitleViewStyle"
+                        android:text="@string/app_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/tokenLayout"
+                android:layout_margin="@dimen/dimen_8"
+                android:padding="@dimen/dimen_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    app:srcCompat="@drawable/ic_outline_money_24"
+                    android:layout_alignParentStart="true"
+                    android:contentDescription="@string/app_name"
+                    android:id="@+id/tokenImageView"
+                    android:layout_centerVertical="true"
+                    android:layout_width="@dimen/dimen_30"
+                    android:layout_height="@dimen/dimen_30"
+                    app:tint="@color/colorPrimary" />
+
+                <LinearLayout
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="@dimen/dimen_24"
+                    android:layout_toEndOf="@id/tokenImageView"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/MenuTitleViewStyle"
+                        android:text="@string/token_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        style="@style/MenuSubTitleViewStyle"
+                        android:text="@string/list_of_tokens_available_on_hurupay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/privacyLayout"
+                android:layout_margin="@dimen/dimen_8"
+                android:padding="@dimen/dimen_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    app:srcCompat="@drawable/outline_article_24"
+                    android:layout_alignParentStart="true"
+                    android:contentDescription="@string/app_name"
+                    android:id="@+id/privacyimageView"
+                    android:layout_centerVertical="true"
+                    android:layout_width="@dimen/dimen_30"
+                    android:layout_height="@dimen/dimen_30"
+                    app:tint="@color/colorPrimary" />
+
+                <LinearLayout
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="@dimen/dimen_24"
+                    android:layout_toEndOf="@id/privacyimageView"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/MenuTitleViewStyle"
+                        android:text="@string/privacy_policyy"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        style="@style/MenuSubTitleViewStyle"
+                        android:text="@string/manage_your_personal_information"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:id="@+id/feedbackLayout"
+                android:layout_margin="@dimen/dimen_8"
+                android:padding="@dimen/dimen_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    app:srcCompat="@drawable/ic_mail_outline_gray_24dp"
+                    android:layout_alignParentStart="true"
+                    android:contentDescription="@string/app_name"
+                    android:id="@+id/feedbackImageView"
+                    android:layout_centerVertical="true"
+                    android:layout_width="@dimen/dimen_30"
+                    android:layout_height="@dimen/dimen_30"
+                    app:tint="@color/colorPrimary" />
+
+                <LinearLayout
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="@dimen/dimen_24"
+                    android:layout_toEndOf="@id/feedbackImageView"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/MenuTitleViewStyle"
+                        android:text="@string/feedback"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        style="@style/MenuSubTitleViewStyle"
+                        android:text="@string/send_feedback_to_our_developers"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/aboutLayout"
+                android:layout_margin="@dimen/dimen_8"
+                android:padding="@dimen/dimen_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    app:srcCompat="@drawable/ic_info_outline_black_24dp"
+                    android:layout_alignParentStart="true"
+                    android:contentDescription="@string/app_name"
+                    android:id="@+id/aboutImageView"
+                    android:layout_centerVertical="true"
+                    android:layout_width="@dimen/dimen_30"
+                    android:layout_height="@dimen/dimen_30"
+                    app:tint="@color/colorPrimary" />
+
+                <LinearLayout
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="@dimen/dimen_24"
+                    android:layout_toEndOf="@id/aboutImageView"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/MenuTitleViewStyle"
+                        android:text="@string/about_hurupay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        style="@style/MenuSubTitleViewStyle"
+                        android:text="@string/view_information_about_hurupay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/signOutLayout"
+                android:layout_margin="@dimen/dimen_8"
+                android:padding="@dimen/dimen_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    app:srcCompat="@drawable/ic_power_settings_24dp"
+                    android:layout_alignParentStart="true"
+                    android:contentDescription="@string/app_name"
+                    android:id="@+id/signOutImageView"
+                    android:layout_centerVertical="true"
+                    android:layout_width="@dimen/dimen_30"
+                    android:layout_height="@dimen/dimen_30"
+                    app:tint="@color/colorPrimary" />
+
+                <LinearLayout
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="@dimen/dimen_24"
+                    android:layout_toEndOf="@id/signOutImageView"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/MenuTitleViewStyle"
+                        android:text="@string/sign_out"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        style="@style/MenuSubTitleViewStyle"
+                        android:text="@string/sign_out"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

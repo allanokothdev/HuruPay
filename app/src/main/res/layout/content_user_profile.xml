@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserProfile"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_user_profile">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:layout_margin="@dimen/dimen_10"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:fontFamily="@font/open_sans_semibold"
+            android:background="@drawable/primary_background_button"
+            android:textColor="@color/colorWhite"
+            android:text="@string/send_money"
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_60"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:padding="8dp"
+            android:background="@color/colorAccent"
+            android:orientation="vertical"
+            tools:listitem="@layout/transaction_item"
+            android:id="@+id/recyclerView"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

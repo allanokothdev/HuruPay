@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:background="@color/colorAccent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateUserProfile">
+
+    <androidx.appcompat.widget.Toolbar
+        app:titleTextColor="@color/toolbarTitle"
+        android:background="@color/toolbarBackground"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textSize="17sp"
+            android:textColor="@color/toolbarTitle"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="@string/create_user_profile"
+            android:layout_gravity="center_vertical|start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.core.widget.NestedScrollView
+        android:padding="@dimen/dimen_16"
+        android:background="@color/colorWhite"
+        android:layout_marginTop="2dp"
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView"
+                    app:cardCornerRadius="@dimen/padding_8"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/lincoln"
+                        android:id="@+id/imageView"
+                        android:scaleType="centerCrop"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:contentDescription="@string/content_description" />
+
+                </androidx.cardview.widget.CardView>
+
+                <Button
+                    android:layout_marginStart="@dimen/dimen_16"
+                    android:layout_toEndOf="@id/cardView"
+                    android:drawableTint="@color/colorWhite"
+                    android:textAllCaps="false"
+                    android:layout_marginTop="@dimen/dimen_24"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorWhite"
+                    android:background="@drawable/primary_background_button"
+                    android:text="@string/upload_profile_pic"
+                    android:textAlignment="center"
+                    android:id="@+id/uploadButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_60"/>
+
+
+            </RelativeLayout>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:drawablePadding="@dimen/dimen_5"
+                android:drawableTint="@color/colorPrimary"
+                android:drawableStart="@drawable/ic_person_blue_24dp"
+                android:layout_marginTop="24dp"
+                android:hint="@string/enter_your_username"
+                android:textSize="18sp"
+                android:cursorVisible="true"
+                android:textCursorDrawable="@drawable/cursor_drawable"
+                android:imeOptions="actionNext"
+                android:inputType="textPersonName"
+                android:fontFamily="@font/open_sans_semibold"
+                android:id="@+id/usernameTextInputEditText"
+                android:layout_width="match_parent"
+                android:background="@drawable/rounded_chat_container"
+                android:paddingEnd="@dimen/dimen_10"
+                android:paddingStart="@dimen/dimen_10"
+                android:layout_height="@dimen/dimen_60"/>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:drawablePadding="@dimen/dimen_5"
+                android:drawableTint="@color/colorPrimary"
+                android:drawableStart="@drawable/ic_outline_account_balance_wallet_24"
+                android:layout_marginTop="24dp"
+                android:hint="@string/wallet_address"
+                android:textSize="18sp"
+                android:cursorVisible="true"
+                android:textCursorDrawable="@drawable/cursor_drawable"
+                android:imeOptions="actionNext"
+                android:inputType="textPersonName"
+                android:fontFamily="@font/open_sans_semibold"
+                android:id="@+id/walletTextInputEditText"
+                android:layout_width="match_parent"
+                android:background="@drawable/rounded_chat_container"
+                android:paddingEnd="@dimen/dimen_10"
+                android:paddingStart="@dimen/dimen_10"
+                android:layout_height="@dimen/dimen_60"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="24dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <com.hbb20.CountryCodePicker
+                    android:id="@+id/countryCodePicker"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    app:ccp_defaultNameCode="RW"
+                    app:ccpDialog_showPhoneCode="true"
+                    app:ccp_autoDetectCountry="true"
+                    app:ccp_autoDetectLanguage="true"
+                    app:ccp_hintExampleNumber="true"
+                    app:ccp_showNameCode="false"
+                    app:ccp_textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/editText"
+                    android:layout_width="0dp"
+                    android:background="@drawable/rounded_chat_container"
+                    android:paddingEnd="@dimen/dimen_10"
+                    android:paddingStart="@dimen/dimen_10"
+                    android:layout_height="@dimen/dimen_60"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:cursorVisible="true"
+                    android:textCursorDrawable="@drawable/cursor_drawable"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:imeOptions="actionNext"
+                    android:inputType="phone"
+                    android:maxLength="12"
+                    tools:ignore="Autofill" />
+
+            </LinearLayout>
+
+            <TextView
+                android:fontFamily="@font/open_sans_bold"
+                android:layout_marginTop="24dp"
+                android:text="@string/select_profile_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Spinner
+                android:layout_marginTop="8dp"
+                android:id="@+id/spinner"
+                android:imeOptions="actionDone"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/rounded_chat_container"
+                android:entries="@array/type" />
+
+            <TextView
+                android:fontFamily="@font/open_sans_bold"
+                android:layout_marginTop="24dp"
+                android:text="@string/select_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Spinner
+                android:layout_marginTop="8dp"
+                android:id="@+id/genderSpinner"
+                android:imeOptions="actionDone"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/rounded_chat_container"
+                android:entries="@array/gender" />
+
+            <Button
+                android:textAllCaps="false"
+                android:layout_marginTop="@dimen/dimen_24"
+                android:fontFamily="@font/open_sans_semibold"
+                android:textSize="18sp"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/primary_background_button"
+                android:text="@string/create_account"
+                android:textAlignment="center"
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_60"/>
+
+            <TextView
+                android:id="@+id/privacyTextView"
+                android:textAlignment="center"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:textColor="@color/colorPrimary"
+                android:fontFamily="@font/open_sans_regular"
+                android:text="@string/privacy_policy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/progressBar"
+        android:layout_gravity="bottom|center_horizontal"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_30"
+        app:indicatorColor="@color/colorPrimary"
+        app:indicatorName="BallPulseIndicator" />
+
+</RelativeLayout>

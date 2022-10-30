@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "549893833941",
+    "firebase_url": "https://eazycrypto-14ab2-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "eazycrypto-14ab2",
+    "storage_bucket": "eazycrypto-14ab2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:549893833941:android:fc6236fea35e23d674ce5c",
+        "android_client_info": {
+          "package_name": "com.hurupay.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "549893833941-7h56qjbt0t5jntj0ktesbutfl6lenjhe.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hurupay.android",
+            "certificate_hash": "60183b758c777a8d1f992076b84e4c8bab01a5fd"
+          }
+        },
+        {
+          "client_id": "549893833941-nhmb310fl7ek6tvrc347fhf7eda1ccff.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDcdNxYZqVODdIwm0SvvC6oZhDkwLJUgcM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "549893833941-nhmb310fl7ek6tvrc347fhf7eda1ccff.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

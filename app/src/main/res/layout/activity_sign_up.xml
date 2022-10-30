@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorAccent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp">
+
+    <androidx.appcompat.widget.Toolbar
+        app:titleTextColor="@color/toolbarTitle"
+        android:background="@color/toolbarBackground"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textSize="17sp"
+            android:textColor="@color/toolbarTitle"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="@string/signup"
+            android:layout_gravity="center_vertical|start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginEnd="@dimen/dimen_10"
+            android:layout_gravity="center_vertical|end"
+            android:fontFamily="@font/open_sans_regular"
+            android:id="@+id/loginTextView"
+            android:textSize="16sp"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/colorPrimary"
+            android:text="@string/login_instead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <ProgressBar
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:id="@+id/progressBar"
+        android:indeterminate="true"
+        android:visibility="invisible"
+        android:indeterminateBehavior="repeat"
+        android:indeterminateTint="@color/black"
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:background="@color/colorWhite"
+        android:layout_below="@id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:paddingStart="20dp"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:paddingEnd="20dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:hint="@string/enter_email"
+                android:background="@drawable/rounded_chat_container"
+                android:layout_marginTop="@dimen/dimen_24"
+                app:startIconDrawable="@drawable/ic_mail_outline_blue_24dp"
+                app:boxStrokeWidth="0dp"
+                app:boxStrokeWidthFocused="0dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:textSize="18sp"
+                    android:gravity="start"
+                    android:cursorVisible="true"
+                    android:textCursorDrawable="@drawable/cursor_drawable"
+                    android:imeOptions="actionNext"
+                    android:inputType="textEmailAddress"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:id="@+id/emailTextInputEditText"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/rounded_chat_container"
+                    android:paddingEnd="@dimen/dimen_10"
+                    android:paddingStart="@dimen/dimen_10"
+                    android:layout_height="@dimen/dimen_60"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/passwordTextInputLayout"
+                android:hint="@string/enter_your_password"
+                android:background="@drawable/rounded_chat_container"
+                android:layout_marginTop="@dimen/dimen_24"
+                app:startIconDrawable="@drawable/ic_security_black_24dp"
+                app:boxStrokeWidth="0dp"
+                app:boxStrokeWidthFocused="0dp"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/colorGray"
+                app:passwordToggleDrawable="@drawable/icon_selector"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:imeOptions="actionNext"
+                    android:cursorVisible="true"
+                    android:gravity="start"
+                    android:textColorLink="@color/transparent"
+                    android:background="@color/transparent"
+                    android:id="@+id/passwordTextInputEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_60"
+                    android:inputType="textPassword"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:textSize="18sp"
+                    android:textCursorDrawable="@drawable/cursor_drawable"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/repeatPasswordTextInputLayout"
+                android:hint="@string/repeat_your_password"
+                android:background="@drawable/rounded_chat_container"
+                android:layout_marginTop="@dimen/dimen_24"
+                app:startIconDrawable="@drawable/ic_security_black_24dp"
+                app:boxStrokeWidth="0dp"
+                app:boxStrokeWidthFocused="0dp"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/colorGray"
+                app:passwordToggleDrawable="@drawable/icon_selector"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:imeOptions="actionDone"
+                    android:cursorVisible="true"
+                    android:background="@color/transparent"
+                    android:id="@+id/repeatPasswordTextInputEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_60"
+                    android:inputType="textPassword"
+                    android:gravity="start"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:textSize="18sp"
+                    android:textCursorDrawable="@drawable/cursor_drawable"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <TextView
+                android:id="@+id/privacyTextView"
+                android:textAlignment="center"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:textColor="@color/colorPrimary"
+                android:fontFamily="@font/open_sans_regular"
+                android:text="@string/privacy_policy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:textAllCaps="false"
+                android:layout_marginTop="@dimen/dimen_24"
+                android:fontFamily="@font/open_sans_semibold"
+                android:textSize="18sp"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/primary_background_button"
+                android:text="@string/signup"
+                android:textAlignment="center"
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_60"/>
+
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

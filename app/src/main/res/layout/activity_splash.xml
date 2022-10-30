@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@color/colorTransparent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/container"
+    android:animateLayoutChanges="true"
+    android:layout_height="match_parent"
+    tools:mContext=".Splash">
+
+    <ImageView
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/app_name"
+        android:id="@+id/imageView"
+        android:scaleType="centerCrop"
+        android:src="@drawable/logo"
+        android:layout_width="@dimen/dimen_150"
+        android:layout_height="@dimen/dimen_150"
+        android:tint="@color/colorDarkTransparency"
+        tools:ignore="UseAppTint" />
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dimen_16"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:fontFamily="@font/open_sans_bold"
+            android:textSize="24sp"
+            android:maxLines="3"
+            android:textColor="@color/colorPrimary"
+            android:textAlignment="center"
+            android:text="@string/app_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:fontFamily="@font/open_sans_semibold"
+                android:textAlignment="center"
+                android:paddingEnd="20dp"
+                android:paddingStart="35dp"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/primary_background_button"
+                android:drawableStart="@drawable/google"
+                android:drawablePadding="5dp"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:id="@+id/googleButton"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="@string/continue_with_google" />
+
+            <Button
+                android:fontFamily="@font/open_sans_semibold"
+                android:textAlignment="center"
+                android:paddingEnd="20dp"
+                android:paddingStart="35dp"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/primary_background_button"
+                android:drawableStart="@drawable/ic_mail_outline_blue_24dp"
+                android:drawablePadding="5dp"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:id="@+id/emailButton"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="@string/sign_in_with_email" />
+
+            <TextView
+                android:id="@+id/loginTextView"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                android:fontFamily="@font/open_sans_semibold"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:textAlignment="center"
+                android:text="@string/login_already"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/progressBar"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:indicatorColor="@color/colorWhite"
+        app:indicatorName="BallPulseIndicator" />
+
+</RelativeLayout>
